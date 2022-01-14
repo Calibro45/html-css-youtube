@@ -5,10 +5,26 @@ html {
     font-family: 'Roboto', sans-serif;;
   }
 
+  main {
+      overflow: scroll;
+  }
+
+  /* sidebar */
+
+  .side-bar {
+      font-size: 14px;
+      overflow: scroll;
+  }
+
+  .widget .widget__title {
+      margin-bottom: 8px;
+      color: #585858;
+  }
 
 
 
-/* mobile */
+
+/* responsive */
 
 @media screen and (min-width: 890px) and (max-width:1140px) {
 
@@ -42,8 +58,9 @@ html {
         margin-right: 0;
     }
 
-    .side-bar .widget:nth-child(2) .widget__menu .menu-item:not(:first-child),
-    .side-bar .widget:nth-child(3) {
+    .side-bar .widget:nth-child(1n+2) .widget__menu .menu-item:not(:first-child),
+    .side-bar .widget:nth-child(3),
+    .ghost {
         display: none;
     }
 
