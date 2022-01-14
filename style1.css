@@ -1,5 +1,17 @@
 /* mobile */
 
+@media screen and (max-width: 509px) {
+
+    .play-list {
+        flex-wrap: wrap;
+    }
+
+    .play-list-item {
+        width: 100%;
+    }
+    
+}
+
 @media screen and (max-width: 800px) {
 
     .side-bar {
@@ -13,7 +25,8 @@
         border: none;
     }
 
-    .side-bar .widget:nth-child(1n+2) .menu-item:not(:first-child) {
+    .side-bar .widget:nth-child(2) .widget__menu .menu-item:not(:first-child),
+    .side-bar .widget:nth-child(3) {
         display: none;
     }
 
@@ -21,3 +34,11 @@
         display: none;
     }
 }
+
+/* @media screen and (max-width: 890px) {
+
+    .play-list-item {
+        width: 33%;
+    }
+} */
+
