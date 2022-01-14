@@ -101,14 +101,7 @@ html {
         width: 100%;
     }
 
-    .play-list-item .card-header {
-        display: flex;
-    }
 
-    .card-header img {
-        flex-grow: 1;
-    }
-    
 }
 
 
