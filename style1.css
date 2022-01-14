@@ -6,7 +6,12 @@ html {
   }
 
   main {
-      overflow: scroll;
+      overflow: auto;
+  }
+
+  a {
+      text-decoration: none;
+      color: currentColor;
   }
 
   /* sidebar */
@@ -19,6 +24,17 @@ html {
   .widget .widget__title {
       margin-bottom: 8px;
       color: #585858;
+  }
+
+  /* Categories */
+
+  .main-container .categories {
+      font-size: 14px;
+  }
+
+  .categories li:hover, .categories .active-alt {
+      background-color: #070707;
+      color: #f0f0f0;
   }
 
 
@@ -60,13 +76,14 @@ html {
 
     .side-bar .widget:nth-child(1n+2) .widget__menu .menu-item:not(:first-child),
     .side-bar .widget:nth-child(3),
-    .ghost {
+    .side-bar .ghost {
         display: none;
     }
 
     .widget .widget__title {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 510px) and (max-width: 890px) {
@@ -87,6 +104,7 @@ html {
     .side-bar {
         display: none;
     }
+
 }
 
 
