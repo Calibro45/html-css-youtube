@@ -1,0 +1,23 @@
+/* mobile */
+
+@media screen and (max-width: 800px) {
+
+    .side-bar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1330px) {
+
+    .widget {
+        border: none;
+    }
+
+    .side-bar .widget:nth-child(1n+2) .menu-item:not(:first-child) {
+        display: none;
+    }
+
+    .widget .widget__title {
+        display: none;
+    }
+}
