@@ -50,6 +50,7 @@ main{
 
 .menu-item:hover, .menu-item.active{
   background-color: #e5e5e5;
+  cursor:pointer
 }
 
 .menu-item .icon{
