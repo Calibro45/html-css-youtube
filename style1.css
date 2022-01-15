@@ -42,6 +42,14 @@ html {
 
 /* responsive */
 
+@media screen and (min-width: 1141px) and (max-width:1800px) {
+
+    .main-container .categories .ghost-lg {
+        display: none;
+    }
+    
+}
+
 @media screen and (min-width: 890px) and (max-width:1140px) {
 
     .play-list {
@@ -51,6 +59,10 @@ html {
 
     .play-list-item {
         width: 31%;
+    }
+
+    .main-container .categories .ghost-mid {
+        display: none;
     }
 }
 
@@ -97,6 +109,11 @@ html {
         width: 48%;
     }
 
+    .main-container .categories .ghost-lg, 
+    .main-container .categories .ghost-mid {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -117,6 +134,12 @@ html {
 
     .play-list-item {
         width: 100%;
+    }
+
+    .main-container .categories .ghost-lg, 
+    .main-container .categories .ghost-mid,
+    .main-container .categories .ghost-xs {
+        display: none;
     }
 
 
