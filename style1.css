@@ -47,7 +47,7 @@ html {
 .main-container .play-list-wrapper .play-list {
     margin-bottom: 35px;
     flex-wrap: wrap;
-    row-gap: 30px;
+    gap: 30px 20px;
 }
 
 .main-container .play-list-wrapper::after {
@@ -127,11 +127,6 @@ html {
 
 @media screen and (min-width: 890px) and (max-width:1140px) {
 
-    .play-list {
-        flex-wrap: wrap;
-        row-gap: 20px;
-    }
-
     .play-list-item {
         width: 31%;
     }
@@ -181,7 +176,7 @@ html {
     }
 
     .play-list-item {
-        width: 48%;
+        width: 47%;
     }
 
     .main-container .categories .ghost-lg, 
