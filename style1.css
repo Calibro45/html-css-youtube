@@ -41,6 +41,18 @@ html {
     color: #585858;
 }
 
+.widget .menu-item .notifica {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.widget .menu-item .notifica i {
+    color: #1e62d2;
+    font-size: 5px;
+}
+
 /* Categories */
 
 .main-container:hover {
