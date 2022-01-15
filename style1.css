@@ -16,26 +16,95 @@ html {
 
   /* sidebar */
 
-  .side-bar {
-      font-size: 14px;
-      overflow: scroll;
+.side-bar {
+    font-size: 14px;
+    overflow: scroll;
+}
+.widget .widget__title {
+    margin-bottom: 8px;
+    color: #585858;
+}
+
+/* Categories */
+
+.main-container .categories {
+    font-size: 14px;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.categories li:hover, .categories .active-alt {
+    background-color: #070707;
+    color: #f0f0f0;
+}
+
+/* playlist */
+
+.main-container .play-list-wrapper .play-list {
+    margin-bottom: 35px;
+}
+
+.main-container .play-list-wrapper::after {
+    content: "";
+    display: block;
+    height: 2px;
+    max-width: 100%;
+    background-color:  #dfdfdf;
+}
+
+.play-list-item .card-header {
+    position: relative;
+    display: flex;
+}
+
+.play-list-item .card-header img {
+    flex-grow: 1;
+}
+
+.play-list-item .card-header .time-wrap {
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    z-index: 1;
   }
 
-  .widget .widget__title {
-      margin-bottom: 8px;
-      color: #585858;
+.overlay::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
   }
 
-  /* Categories */
+.play-list-item .card-body .info {
+    color: #555555;
+    font-size: 12px;
+}
 
-  .main-container .categories {
-      font-size: 14px;
-  }
+.card-body .info .info-title {
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
-  .categories li:hover, .categories .active-alt {
-      background-color: #070707;
-      color: #f0f0f0;
-  }
+.card-body .info .info-autor {
+    margin-bottom: 5px;
+}
+
+.card-body .info .info-credit i {
+  font-size: 3px;
+  vertical-align: middle;
+}
+
 
 
 
@@ -124,7 +193,6 @@ html {
 
 }
 
-
 @media screen and (max-width: 509px) {
 
     .play-list {
@@ -141,7 +209,6 @@ html {
     .main-container .categories .ghost-xs {
         display: none;
     }
-
 
 }
 
