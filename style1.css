@@ -6,7 +6,7 @@ html {
   }
 
   main {
-      overflow: auto;
+      overflow: hidden;
   }
 
   a {
@@ -14,12 +14,28 @@ html {
       color: currentColor;
   }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(229, 229, 229, 0.4); 
+    
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
+}
+
 /* sidebar */
 
 .side-bar {
     font-size: 14px;
-    overflow: scroll;
 }
+
+.side-bar:hover {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .widget .widget__title {
     margin-bottom: 8px;
     color: #585858;
@@ -27,8 +43,9 @@ html {
 
 /* Categories */
 
-.main-container {
-    overflow: scroll;
+.main-container:hover {
+    overflow-x: hidden;
+    overflow-y:scroll
 }
 
 .main-container .categories {
