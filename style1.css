@@ -14,7 +14,7 @@ html {
       color: currentColor;
   }
 
-  /* sidebar */
+/* sidebar */
 
 .side-bar {
     font-size: 14px;
@@ -44,10 +44,21 @@ html {
 
 /* playlist */
 
+.main-container .play-list-wrapper .play-list-title {
+    margin-bottom: 30px;
+    font-size: 22px;
+    padding: 5px 15px;
+    font-weight: 500;
+}
+
 .main-container .play-list-wrapper .play-list {
     margin-bottom: 35px;
     flex-wrap: wrap;
     gap: 30px 20px;
+}
+
+.main-container .play-list-wrapper .play-list:hover {
+    cursor: pointer;
 }
 
 .main-container .play-list-wrapper::after {
