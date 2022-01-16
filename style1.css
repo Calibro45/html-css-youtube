@@ -66,6 +66,10 @@ html {
     font-weight: 100;
 }
 
+.nav-bar__wrapper .search-bar {
+    margin-right: 20px;
+}
+
 .user-menu .icon {
     width: 30px;
     text-align: center;
@@ -295,7 +299,7 @@ html {
 
 @media screen and (max-width: 509px) {
 
-    .nav-bar__wrapper .search-bar li:first-child :not(i) {
+    .nav-bar__wrapper .search-bar .search-text:first-child :not(i) {
         display: none;
     }
 
