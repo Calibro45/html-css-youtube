@@ -31,15 +31,39 @@ html {
 
 /* navigation bar */
 
+#navbar .nav-bar__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    white-space: nowrap;
+}
+
 .nav-bar__wrapper .logo-wrap,
 .nav-bar__wrapper .search-bar,
 .nav-bar__wrapper .user-menu {
     gap: 20px;
+    align-items: center;
 }
 
-#navbar .nav-bar__wrapper {
-    display: flex;
-    justify-content: space-between;
+.logo-wrap .logo {
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    padding-right: 20px;
+}
+
+.logo-wrap .logo i {
+    color: red;
+}
+
+.logo-wrap .logo .it {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 100;
 }
 
 .user-menu .icon {
@@ -271,6 +295,10 @@ html {
 
 @media screen and (max-width: 509px) {
 
+    .nav-bar__wrapper .search-bar li:first-child :not(i) {
+        display: none;
+    }
+
     .play-list {
         flex-direction: column;
         gap: 20px;
@@ -287,6 +315,8 @@ html {
     }
 
 }
+
+
 
 
 
