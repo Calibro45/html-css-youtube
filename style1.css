@@ -14,6 +14,10 @@ html {
       color: currentColor;
   }
 
+  input[type="text"] {
+      border: none;
+  }
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -51,6 +55,7 @@ html {
     font-weight: 700;
     position: relative;
     padding-right: 20px;
+    margin-right: 20px;
 }
 
 .logo-wrap .logo i {
@@ -68,6 +73,41 @@ html {
 
 .nav-bar__wrapper .search-bar {
     margin-right: 20px;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.search-bar .search-wrap {
+    width: 100%;
+    align-items: center;
+}
+
+.search-bar .search-text {
+    padding: 10px 15px;
+    border: 2px solid #c5c5c5;
+    width: 100%;
+    border-right: none;
+}
+
+.search-text:focus {
+    outline: none;
+    border: 2px solid #1e62d2;
+}
+
+.search-bar .search-wrap .search-icon {
+    border: 2px solid #c5c5c5;
+    padding: 10px 20px;
+}
+
+.search-icon:hover {
+    cursor: pointer;
+}
+
+.search-bar .icon-style i {
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    padding: 10px 14px;
 }
 
 .user-menu .icon {
@@ -299,8 +339,13 @@ html {
 
 @media screen and (max-width: 509px) {
 
-    .nav-bar__wrapper .search-bar .search-text:first-child :not(i) {
+    .nav-bar__wrapper .search-bar .search-text {
         display: none;
+    }
+
+    .search-bar .search-wrap .search-icon {
+        border: none;
+        background-color: transparent;
     }
 
     .play-list {
